@@ -10,3 +10,6 @@ variable "ip_cidr" {
   type = string
 }
 
+variable "vm_sku" {
+  type = string
+  }
