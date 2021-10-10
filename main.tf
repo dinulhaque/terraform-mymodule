@@ -47,7 +47,7 @@ resource "azurerm_linux_virtual_machine" "main" {
   location              = azurerm_resource_group.lesson1.location
   resource_group_name   = azurerm_resource_group.lesson1.name
   network_interface_ids = [azurerm_network_interface.main.id]
-  size               = "Standard_DS1_v2"
+  size               = var.vm_sku
 
   os_disk {
     caching              = "ReadWrite"
